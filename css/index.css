@@ -1,6 +1,9 @@
 body{
+    background-color: beige;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
 img{
     width:300px;
     border-radius: 50%;
