@@ -22,31 +22,37 @@ article
 {
   display: flex;
   flex-direction: column;
-  /* background-color: plum; */
-  padding-bottom: 0px;
+  background-color: brown;
   justify-content :center;
   align-items : center;
-
+  padding-bottom: 100px;
 }
 footer
 {
   background-color: #2d2d2d;
   width:100%;
-  height:100px;
+  height:80px;
   bottom:0px;
   position: absolute;
   color: white;
 }
 
 img{
-    width:40px;
-    border-radius: 50%;
+    width:100%;
+    height: 100%;
 }
 /*상단 메뉴 영역1*/
+#topMenu0 {  
+  background-color: blue;          
+  height: 8rem;
+  width: 20%; 
+  float: left;
+}
 #topMenu1 {  
-  background-color: transparent;          
+  background-color: green;          
   height: 4rem;
-  width: 100%; 
+  width: 80%; 
+  float: right;
 }
 #topMenu1 ul{                   
   list-style: none;  
@@ -84,9 +90,10 @@ li{
 
 /*상단 메뉴 영역2*/
 #topMenu2 {  
-  background-color: transparent;          
+  background-color: blue;          
   height: 4rem;
-  width: 100%; 
+  width: 80%; 
+  float: right;
 }
 /*오른쪽 정렬.*/
 #topMenu2 ul{                   
@@ -129,7 +136,7 @@ li{
 {
   display:block;
   content: '';
-  border-bottom: solid 3px white;  
+  border-bottom: solid 3px goldenrod;  
   transform: scaleX(0);  
   transition: transform 400ms ease-in-out; /*천천히-보통-천천히*/
 }
