@@ -1,0 +1,37 @@
+body{
+    background-color: ivory;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+img{
+    width:400px;
+    border-radius: 50%;
+}
+
+.main{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    gap: 3px;
+  }
+  
+  .main_bar {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 80px;
+    background-color: cornflowerblue;
+    flex: 1;
+    transition: 0.5s ease-in-out;
+  }
+  
+  /*메뉴 호버시 flex:늘어나는 범위 조절*/
+  .main_bar:hover {
+    flex: 3;
+    cursor: pointer;
+  }

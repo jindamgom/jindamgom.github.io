@@ -35,57 +35,17 @@ footer
   height:100px;
   bottom:0px;
   position: absolute;
-  color: white;
 }
-
 img{
-    width:40px;
+    width:400px;
     border-radius: 50%;
 }
-/*상단 메뉴 영역1*/
-#topMenu1 {  
-  background-color: transparent;          
-  height: 4rem;
-  width: 100%; 
-}
-#topMenu1 ul{                   
-  list-style: none;  
-  line-height: 4rem;          
-  color: blue;
-  float: right;                
-}
-/*그리고 자식요소들은 좌측부터 정렬한다.*/
-#topMenu1 ul li:first-child 
-{  
-  float: left;       
-  vertical-align: middle;    
-  text-align: center;    
-  background-color: red;
-  background-image:url('/images/icon_home.png');
-}
-#topMenu1 ul li:last-child
-{  
-  float: left;       
-  vertical-align: middle;    
-  text-align: center;    
-  background-color: blue; 
 
-}
-
-li{   
-  float: left;       
-  vertical-align: middle;    
-  text-align: center;    
-  background-color: #2d2d2d; 
-  border-right: 2px solid silver;
-  border-radius: 4px;
-}
-
-
-/*상단 메뉴 영역2*/
+/*상단 메뉴 영역*/
 #topMenu2 {  
+  margin-top: 3rem;
   background-color: transparent;          
-  height: 4rem;
+  height: 100px;
   width: 100%; 
 }
 /*오른쪽 정렬.*/
@@ -96,8 +56,7 @@ li{
   float: right;                
 }
 /*그리고 자식요소들은 좌측부터 정렬한다.*/
-#topMenu2 ul li:first-child 
-{  
+li{   
   float: left;       
   vertical-align: middle;    
   text-align: center;    
@@ -105,7 +64,6 @@ li{
   border-right: 2px solid silver;
   border-radius: 4px;
 }
-
 /*첫번째 자식은 border를 긋지 않는다*/
 #topMenu1 ul li:first-child
 {
