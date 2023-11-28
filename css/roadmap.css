@@ -4,128 +4,128 @@ html,body{
     background-color: ivory;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-/*footer 고정용 div*/
-#index_div_wrap
-{
+  }
+  
+  /*footer 고정용 div*/
+  #index_div_wrap
+  {
   /*기존 height:부모 요소에 의존적 , vh:view height(브라우저 높이기준)*/
   min-height: 100vh;
   position: relative;
   width: 100%;
-}
-/*
+  }
+  /*
   index 페이지의 컨텐츠 부분
   문구, 이미지 슬라이스.
-*/
-article
-{
+  */
+  article
+  {
   display: flex;
   flex-direction: column;
   background-color: brown;
   justify-content :center;
   align-items : center;
   padding-bottom: 100px;
-}
-footer
-{
+  }
+  footer
+  {
   background-color: #2d2d2d;
   width:100%;
   height:80px;
   bottom:0px;
   position: absolute;
   color: white;
-}
-
-#logo
-{
+  }
+  
+  #logo
+  {
   width:100px;
   height:100px;
   background-color: black;
-}
-
-img{
+  }
+  
+  img{
     width:100%;
     height: 100%;
-}
-/*상단 메뉴 영역1*/
-#topMenu0 {  
+  }
+  /*상단 메뉴 영역1*/
+  #topMenu0 {  
   background-color: blue;          
   height: 8rem;
   width: 20%; 
   float: left;
-}
-#topMenu1 {  
+  }
+  #topMenu1 {  
   background-color: green;          
   height: 4rem;
   width: 80%; 
   float: right;
-}
-#topMenu1 ul{                   
+  }
+  #topMenu1 ul{                   
   list-style: none;  
   line-height: 4rem;          
   color: blue;
   float: right;                
-}
-/*그리고 자식요소들은 좌측부터 정렬한다.*/
-#topMenu1 ul li:first-child 
-{  
+  }
+  /*그리고 자식요소들은 좌측부터 정렬한다.*/
+  #topMenu1 ul li:first-child 
+  {  
   float: left;       
   vertical-align: middle;    
   text-align: center;    
   background-color: red;
   background-image:url('/images/icon_home.png');
-}
-#topMenu1 ul li:last-child
-{  
+  }
+  #topMenu1 ul li:last-child
+  {  
   float: left;       
   vertical-align: middle;    
   text-align: center;    
   background-color: blue; 
-
-}
-
-li{   
+  
+  }
+  
+  li{   
   float: left;       
   vertical-align: middle;    
   text-align: center;    
   background-color: #2d2d2d; 
   border-right: 2px solid silver;
   border-radius: 4px;
-}
-
-
-/*상단 메뉴 영역2*/
-#topMenu2 {  
+  }
+  
+  
+  /*상단 메뉴 영역2*/
+  #topMenu2 {  
   background-color: blue;          
   height: 4rem;
   width: 80%; 
   float: right;
-}
-/*오른쪽 정렬.*/
-#topMenu2 ul{                   
+  }
+  /*오른쪽 정렬.*/
+  #topMenu2 ul{                   
   list-style: none;  
   line-height: 4rem;          
   color: blue;
   float: right;                
-}
-/*그리고 자식요소들은 좌측부터 정렬한다.*/
-#topMenu2 ul li:first-child 
-{  
+  }
+  /*그리고 자식요소들은 좌측부터 정렬한다.*/
+  #topMenu2 ul li:first-child 
+  {  
   float: left;       
   vertical-align: middle;    
   text-align: center;    
   background-color: #2d2d2d; 
   border-right: 2px solid silver;
   border-radius: 4px;
-}
-
-/*첫번째 자식은 border를 긋지 않는다*/
-#topMenu1 ul li:first-child
-{
+  }
+  
+  /*첫번째 자식은 border를 긋지 않는다*/
+  #topMenu1 ul li:first-child
+  {
   border-left: none;  
-}
-#topMenu2 .menuLink {                      
+  }
+  #topMenu2 .menuLink {                      
   text-decoration:none;                    
   color: white;                          
   display: block;                         
@@ -133,34 +133,34 @@ li{
   font-size: large;                          
   font-weight: bold;                       
   font-family: Georgia, 'Times New Roman', Times, serif
-}
-/*메뉴 호버시 효과*/
-#topMenu2 .menuLink:hover {           
+  }
+  /*메뉴 호버시 효과*/
+  #topMenu2 .menuLink:hover {           
   color: goldenrod;               
   background-color: #4d4d4d;  
-}
-#topMenu2 .menuLink:after
-{
+  }
+  #topMenu2 .menuLink:after
+  {
   display:block;
   content: '';
   border-bottom: solid 3px goldenrod;  
   transform: scaleX(0);  
   transition: transform 400ms ease-in-out; /*천천히-보통-천천히*/
-}
-#topMenu2 .menuLink:hover::after 
-{
+  }
+  #topMenu2 .menuLink:hover::after 
+  {
   transform: scaleX(1);
-}
-
-/* https://developing-move.tistory.com/123 */
-
-
-
-/*
+  }
+  
+  /* https://developing-move.tistory.com/123 */
+  
+  
+  
+  /*
   타이핑효과 텍스트.
   ch:글자수에 기반한 길이단위, (문자열길이)ch
-*/
-.typing-demo {
+  */
+  .typing-demo {
   margin-top: 30px;
   width: 21ch;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
@@ -169,154 +169,154 @@ li{
   border-right: 3px solid;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 3em;
-}
-
-@keyframes typing {
+  }
+  
+  @keyframes typing {
   from {
     width: 0
   }
-}
+  }
     
-@keyframes blink {
+  @keyframes blink {
   50% {
     border-color: transparent
   }
-}
-/* https://cloud-library.tistory.com/entry/CSS%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%ED%83%80%EC%9D%B4%ED%95%91-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98 */
-
-
-
-
-/*======================아래부터 슬라이드 관련 코드======================*/
-
-.slide {
+  }
+  /* https://cloud-library.tistory.com/entry/CSS%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%ED%83%80%EC%9D%B4%ED%95%91-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98 */
+  
+  
+  
+  
+  /*======================아래부터 슬라이드 관련 코드======================*/
+  
+  .slide {
   margin-top:30px;
   /* layout */
   display: flex;
   flex-wrap: nowrap;
   /* 컨테이너의 내용물이 컨테이너 크기(width, height)를 넘어설 때 보이지 않도록 하기 위해 hidden을 준다. */
   overflow: hidden;
-
+  
   /* position */
   /* slide_button의 position absolute가 컨테이너 안쪽에서 top, left, right offset이 적용될 수 있도록 relative를 준다. (기본값이 static인데, static인 경우 그 상위 컨테이너로 나가면서 현재 코드에선 html을 기준으로 offset을 적용시키기 때문) */
   position: relative;
-
+  
   /* size */
   width: 40%;
-
+  
   /* slide drag를 위해 DOM요소가 드래그로 선택되는것을 방지 */
   user-select: none;
-
-}
-.slide_item {
+  
+  }
+  .slide_item {
   /* layout */
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   /* position - 버튼 클릭시 left offset값을 적용시키기 위해 */
   position: relative;
   left: 0px;
-
+  
   /* size */
   width: 100%;
   height: 500px;
   /* flex item의 flex-shrink는 기본값이 1이므로 컨테이너 크기에 맞게 줄어드는데, 슬라이드를 구현할 것이므로 줄어들지 않도록 0을 준다. */
   flex-shrink: 0;
-
+  
   /* transition */
   transition: left 0.15s;
-}
-.slide_button {
+  }
+  .slide_button {
   /* layout */
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   /* position */
   position: absolute;
   /* 버튼이 중앙에 위치하게 하기위해 계산 */
   top: calc(50% - 16px);
-
+  
   /* size */
   width: 32px;
   height: 32px;
-
+  
   /* style */
   border-radius: 100%;
   background-color: #cccc;
   cursor: pointer;
-}
-
-.slide_prev_button {
+  }
+  
+  .slide_prev_button {
   left: 10px;
-}
-.slide_next_button {
+  }
+  .slide_next_button {
   right: 10px;
-}
-
-/* 각 슬라이드가 변경되는 것을 시각적으로 확인하기 쉽도록 각 슬라이드별 색상 적용 */
-/* 1127 배경색상 대신 좋아하는 이미지가 나오도록 수정
+  }
+  
+  /* 각 슬라이드가 변경되는 것을 시각적으로 확인하기 쉽도록 각 슬라이드별 색상 적용 */
+  /* 1127 배경색상 대신 좋아하는 이미지가 나오도록 수정
    size
    contain:이미지 가로세로 비율 유지-이미지가 잘리지않을때까지 채움
    cover:이미지 가로세로 비율 유지 - 이미지가 잘리더라도 주어진 크기를 꽉 채움
-*/
-.slide_item.item1 {
+  */
+  .slide_item.item1 {
   background-color: darkgoldenrod;
   background-image: url('/images/chi.png');
   background-size: contain;
-}
-.slide_item.item2 {
+  }
+  .slide_item.item2 {
   background-color: aqua;
   background-image: url('/images/chi2.png');
   background-size: cover;
-}
-.slide_item.item3 {
+  }
+  .slide_item.item3 {
   background-color: aqua;
   background-image: url('/images/chi3.png');
   background-size: cover;
-}
-/* .slide_item.item3 {
+  }
+  /* .slide_item.item3 {
   background-color: blueviolet;
-}
-.slide_item.item4 {
+  }
+  .slide_item.item4 {
   background-color: burlywood;
-}
-.slide_item.item5 {
+  }
+  .slide_item.item5 {
   background-color: cornflowerblue;
-} */
-
-/* 페이지네이션 스타일 */
-ul,
-li {
+  } */
+  
+  /* 페이지네이션 스타일 */
+  ul,
+  li {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-.slide_pagination {
+  }
+  .slide_pagination {
   /* layout */
   display: flex;
   gap: 5px;
-
+  
   /* position */
   position: absolute;
   bottom: 0;
   /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
   left: 50%;
   transform: translateX(-50%);
-}
-.slide_pagination > li {
+  }
+  .slide_pagination > li {
   /* 현재 슬라이드가 아닌 것은 투명도 부여 */
   color: #7fb5ff88;
   cursor: pointer;
   font-size: 25px;
-}
-.slide_pagination > li.active {
+  }
+  .slide_pagination > li.active {
   /* 현재 슬라이드 색상은 투명도 없이 */
   color: #7fb5ff;
-}
-
-.slide_item_duplicate {
+  }
+  
+  .slide_item_duplicate {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -326,4 +326,4 @@ li {
   height: 300px;
   flex-shrink: 0;
   transition: left 0.15s;
-}
+  }
