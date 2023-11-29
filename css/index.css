@@ -116,8 +116,7 @@ li{
   color: white;                          
   display: block;                         
   width: 20rem;                      
-  font-size: large;                          
-  font-weight: bold;                       
+  font-size: large;                                              
   font-family: Georgia, 'Times New Roman', Times, serif
 }
 /*메뉴 호버시 효과*/
