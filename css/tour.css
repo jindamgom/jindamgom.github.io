@@ -1,88 +1,106 @@
-html,body{
-  margin:0;
-  padding:0;
-  background-color: ivory;
+
+@font-face {
+  font-family: 'DungGeunMo';
+  src: url('../font/DungGeunMo.woff2');
+}
+body {
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  padding: 30px;
+  font-family: 'DungGeunMo';
 }
-
-/*footer 고정용 div*/
-#index_div_wrap
+#img_me
 {
-/*기존 height:부모 요소에 의존적 , vh:view height(브라우저 높이기준)*/
-min-height: 100vh;
-position: relative;
-width: 100%;
+  width: 500px;
 }
-/*
-index 페이지의 컨텐츠 부분
-문구, 이미지 슬라이스.
-*/
-article
-{
-display: flex;
-flex-direction: column;
-background-color: brown;
-justify-content :center;
-align-items : center;
-padding-bottom: 100px;
+.eightbit-btn {
+  width: 200px;
+  background: #92CD41;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  font-family: 'DungGeunMo', cursive;
+  /* font-family: "Press Start 2P", cursive; */
+  text-decoration: none;
+  color: white;
+  box-shadow: inset -4px -4px 0px 0px #4AA52E;
+  margin-right: 30px;
 }
-footer
-{
-background-color: #2d2d2d;
-width:100%;
-height:80px;
-bottom:0px;
-position: absolute;
-color: white;
+.eightbit-btn:hover, .eightbit-btn:focus {
+  background: #76c442;
+  box-shadow: inset -6px -6px 0px 0px #4AA52E;
 }
-
-#logo
-{
-width:100px;
-height:100px;
-background-color: black;
+.eightbit-btn:active {
+  box-shadow: inset 4px 4px 0px 0px #4AA52E;
 }
-
-img{
-  width:100%;
+.eightbit-btn:before, .eightbit-btn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
   height: 100%;
+  box-sizing: content-box;
 }
-/*상단 메뉴 영역1*/
-#topMenu0 {  
-background-color: blue;          
-height: 8rem;
-width: 20%; 
-float: left;
+.eightbit-btn:before {
+  top: -6px;
+  left: 0;
+  border-top: 6px black solid;
+  border-bottom: 6px black solid;
 }
-#topMenu1 {  
-background-color: green;          
-height: 4rem;
-width: 80%; 
-float: right;
+.eightbit-btn:after {
+  left: -6px;
+  top: 0;
+  border-left: 6px black solid;
+  border-right: 6px black solid;
 }
-#topMenu1 ul{                   
-list-style: none;  
-line-height: 4rem;          
-color: blue;
-float: right;                
+.eightbit-btn--reset {
+  width: 200px;
+  background: #E76E55;
+  box-shadow: inset -4px -4px 0px 0px #8C2022;
 }
-/*그리고 자식요소들은 좌측부터 정렬한다.*/
-#topMenu1 ul li:first-child 
-{  
-float: left;       
-vertical-align: middle;    
-text-align: center;    
-background-color: red;
-background-image:url('/images/icon_home.png');
+.eightbit-btn--reset:hover, .eightbit-btn--reset:focus {
+  background: #CE372B;
+  box-shadow: inset -6px -6px 0px 0px #8C2022;
 }
-#topMenu1 ul li:last-child
-{  
-float: left;       
-vertical-align: middle;    
-text-align: center;    
-background-color: blue; 
+.eightbit-btn--reset:active {
+  box-shadow: inset 4px 4px 0px 0px #8C2022;
+}
+.eightbit-btn--proceed {
+  width: 200px;
+  background: #F7D51D;
+  box-shadow: inset -4px -4px 0px 0px #E59400;
+}
+.eightbit-btn--proceed:hover, .eightbit-btn--proceed:focus {
+  background: #F2C409;
+  box-shadow: inset -6px -6px 0px 0px #E59400;
+}
+.eightbit-btn--proceed:active {
+  box-shadow: inset 4px 4px 0px 0px #E59400;
+}
+.eightbit-btn--members {
+  width: 200px;
+  background: skyblue;
+  box-shadow: inset -4px -4px 0px 0px rgb(113, 164, 184);
+}
+.eightbit-btn--members:hover, .eightbit-btn--members:focus {
+  background:  skyblue;
+  box-shadow: inset -6px -6px 0px 0px rgb(113, 164, 184);
+}
+.eightbit-btn--members:active {
+  box-shadow: inset 4px 4px 0px 0px rgb(113, 164, 184);
+}
 
+.eightbit-btn--thanksfor {
+  width: 200px;
+  background: violet;
+  box-shadow: inset -4px -4px 0px 0px rgb(162, 78, 162);
+}
+.eightbit-btn--thanksfor:hover, .eightbit-btn--thanksfor:focus {
+  background:  violet;
+  box-shadow: inset -6px -6px 0px 0px rgb(162, 78, 162);
+}
+.eightbit-btn--thanksfor:active {
+  box-shadow: inset 4px 4px 0px 0px rgb(162, 78, 162);
 }
 
 li{   
@@ -99,16 +117,16 @@ border-radius: 4px;
 #topMenu2 {  
 background-color: blue;          
 height: 4rem;
-width: 80%; 
-float: right;
+width: 100%; 
+/* float: right; */
 }
 /*오른쪽 정렬.*/
-#topMenu2 ul{                   
+/* #topMenu2 ul{                   
 list-style: none;  
 line-height: 4rem;          
 color: blue;
 float: right;                
-}
+} */
 /*그리고 자식요소들은 좌측부터 정렬한다.*/
 #topMenu2 ul li:first-child 
 {  
@@ -120,210 +138,84 @@ border-right: 1px solid silver;
 border-radius: 4px;
 }
 
-/*첫번째 자식은 border를 긋지 않는다*/
-#topMenu1 ul li:first-child
-{
-border-left: none;  
+*, *:before, *:after {
+  box-sizing: border-box;
 }
-#topMenu2 .menuLink {                      
-text-decoration:none;                    
-color: white;                          
-display: block;                         
-width: 20rem;                      
-font-size: large;                          
-font-weight: bold;                       
-font-family: Georgia, 'Times New Roman', Times, serif
+
+/* body {
+  background-color: pink;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'DungGeunMo';
+  text-align: center;
+} */
+
+h1 {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
 }
-/*메뉴 호버시 효과*/
-#topMenu2 .menuLink:hover {           
-color: goldenrod;               
-background-color: #4d4d4d;  
+
+h2 {
+  font-size: 2rem;
 }
-#topMenu2 .menuLink:after
-{
-display:block;
-content: '';
-border-bottom: solid 3px goldenrod;  
-transform: scaleX(0);  
-transition: transform 400ms ease-in-out; /*천천히-보통-천천히*/
-}
-#topMenu2 .menuLink:hover::after 
-{
-transform: scaleX(1);
-}
+
 
 /* https://developing-move.tistory.com/123 */
 
 
 
-/*
-타이핑효과 텍스트.
-ch:글자수에 기반한 길이단위, (문자열길이)ch
-*/
-.typing-demo {
-margin-top: 30px;
-width: 21ch;
-animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-white-space: nowrap;
-overflow: hidden;
-border-right: 3px solid;
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 3em;
-}
 
-@keyframes typing {
-from {
-  width: 0
-}
-}
+
+/* h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-weight: normal;
+  width: 100%;
+  text-align: center;
+  font-size: 16vw;
+  background: linear-gradient(-45deg, #4bc0c8 25%, #feac5e 25%, #feac5e 50%, #4bc0c8 50%, #4bc0c8 75%, #feac5e 75%, #feac5e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 20px 20px;
+  background-position: 0 0;
+  animation: stripes 1s linear infinite;
   
-@keyframes blink {
-50% {
-  border-color: transparent
-}
-}
-/* https://cloud-library.tistory.com/entry/CSS%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%ED%83%80%EC%9D%B4%ED%95%91-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98 */
-
-
-
-
-/*======================아래부터 슬라이드 관련 코드======================*/
-
-.slide {
-margin-top:30px;
-/* layout */
-display: flex;
-flex-wrap: nowrap;
-/* 컨테이너의 내용물이 컨테이너 크기(width, height)를 넘어설 때 보이지 않도록 하기 위해 hidden을 준다. */
-overflow: hidden;
-
-/* position */
-/* slide_button의 position absolute가 컨테이너 안쪽에서 top, left, right offset이 적용될 수 있도록 relative를 준다. (기본값이 static인데, static인 경우 그 상위 컨테이너로 나가면서 현재 코드에선 html을 기준으로 offset을 적용시키기 때문) */
-position: relative;
-
-/* size */
-width: 40%;
-
-/* slide drag를 위해 DOM요소가 드래그로 선택되는것을 방지 */
-user-select: none;
-
-}
-.slide_item {
-/* layout */
-display: flex;
-align-items: center;
-justify-content: center;
-
-/* position - 버튼 클릭시 left offset값을 적용시키기 위해 */
-position: relative;
-left: 0px;
-
-/* size */
-width: 100%;
-height: 500px;
-/* flex item의 flex-shrink는 기본값이 1이므로 컨테이너 크기에 맞게 줄어드는데, 슬라이드를 구현할 것이므로 줄어들지 않도록 0을 준다. */
-flex-shrink: 0;
-
-/* transition */
-transition: left 0.15s;
-}
-.slide_button {
-/* layout */
-display: flex;
-justify-content: center;
-align-items: center;
-
-/* position */
-position: absolute;
-/* 버튼이 중앙에 위치하게 하기위해 계산 */
-top: calc(50% - 16px);
-
-/* size */
-width: 32px;
-height: 32px;
-
-/* style */
-border-radius: 100%;
-background-color: #cccc;
-cursor: pointer;
-}
-
-.slide_prev_button {
-left: 10px;
-}
-.slide_next_button {
-right: 10px;
-}
-
-/* 각 슬라이드가 변경되는 것을 시각적으로 확인하기 쉽도록 각 슬라이드별 색상 적용 */
-/* 1127 배경색상 대신 좋아하는 이미지가 나오도록 수정
- size
- contain:이미지 가로세로 비율 유지-이미지가 잘리지않을때까지 채움
- cover:이미지 가로세로 비율 유지 - 이미지가 잘리더라도 주어진 크기를 꽉 채움
-*/
-.slide_item.item1 {
-background-color: darkgoldenrod;
-background-image: url('/images/chi.png');
-background-size: contain;
-}
-.slide_item.item2 {
-background-color: aqua;
-background-image: url('/images/chi2.png');
-background-size: cover;
-}
-.slide_item.item3 {
-background-color: aqua;
-background-image: url('/images/chi3.png');
-background-size: cover;
-}
-/* .slide_item.item3 {
-background-color: blueviolet;
-}
-.slide_item.item4 {
-background-color: burlywood;
-}
-.slide_item.item5 {
-background-color: cornflowerblue;
 } */
-
-/* 페이지네이션 스타일 */
-ul,
-li {
-list-style-type: none;
-padding: 0;
-margin: 0;
-}
-.slide_pagination {
-/* layout */
-display: flex;
-gap: 5px;
-
-/* position */
-position: absolute;
-bottom: 0;
-/* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
-left: 50%;
-transform: translateX(-50%);
-}
-.slide_pagination > li {
-/* 현재 슬라이드가 아닌 것은 투명도 부여 */
-color: #7fb5ff88;
-cursor: pointer;
-font-size: 25px;
-}
-.slide_pagination > li.active {
-/* 현재 슬라이드 색상은 투명도 없이 */
-color: #7fb5ff;
+@keyframes stripes
+ {
+  100% {
+      background-position: 20px 0, 20px 0, 20px 0;
+  }
 }
 
-.slide_item_duplicate {
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
-left: 0px;
-width: 100%;
-height: 300px;
-flex-shrink: 0;
-transition: left 0.15s;
+h1, h2 {
+  font-family: 'DungGeunMo', cursive;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+hr {
+  margin: 40px auto;
+  max-width: 100px;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  padding: 0;
+}
+
+.pen-intro {
+  text-align: center;
+}
+
+footer{
+  width: 100%;
+  background-color: white;
 }
