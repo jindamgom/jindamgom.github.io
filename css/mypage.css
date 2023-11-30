@@ -84,7 +84,6 @@ body {
   box-shadow: inset 4px 4px 0px 0px rgb(113, 164, 184);
 }
 
-<<<<<<< HEAD
 li{   
 float: left;       
 vertical-align: middle;    
@@ -118,7 +117,7 @@ text-align: center;
 background-color: #2d2d2d; 
 border-right: 1px solid silver;
 border-radius: 4px;
-=======
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -138,14 +137,13 @@ body {
 h1 {
   font-size: 2.8rem;
   line-height: 3.4rem;
->>>>>>> bf42d9bdc33838df50b58cc9ca5a4884b5a600d8
 }
 
 h2 {
   font-size: 2rem;
 }
 
-<<<<<<< HEAD
+
 /* https://developing-move.tistory.com/123 */
 
 
@@ -175,7 +173,6 @@ h1 {
   }
 }
 
-=======
 h1, h2 {
   font-family: 'DungGeunMo', cursive;
 }
@@ -203,4 +200,3 @@ footer{
   width: 100%;
   background-color: white;
 }
->>>>>>> bf42d9bdc33838df50b58cc9ca5a4884b5a600d8
