@@ -1,63 +1,66 @@
-<!--Landing page-->
+<!--my page-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage index</title>
-    <!-- 적용할 style sheet-->
-    <link rel="stylesheet" href="./css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homepage index</title>
+  <!-- 적용할 style sheet-->
+  <link rel="stylesheet" href="./css/index.css">
+
+  <!--CDN방식으로 import-->
+  <!-- minify -->
+<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+<!-- latest -->
+<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+<!-- core style only -->
+<link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
 </head>
+
 <body>
-    <div id="index_div_wrap">
-        
-        <nav id="topMenu0" >
-           <image id="logo" src="/images/logo.png"></image>
-        </nav>
-    <nav id="topMenu1" >
-        <ul>
-                <li><a class="menuLink" onclick="location.href='index.html'" >home</a></li>
-                <li><a class="menuLink" onclick="location.href='membership.html'">join</a></li>
-        </ul>
+  <div id="index_div_wrap">
+    <nav id="topMenu">
+      <a onclick="location.href='mypage.html'" class="eightbit-btn">My page</a>
+      <a onclick="location.href='tour.html'" class="eightbit-btn eightbit-btn--proceed">Tour</a>
+      <a onclick="location.href='roadmap.html'" class="eightbit-btn eightbit-btn--reset">Road map</a>
+      <a onclick="location.href='members.html'" class="eightbit-btn eightbit-btn--members">Members</a>
+      <a onclick="location.href='thanksfor.html'" class="eightbit-btn eightbit-btn--thanksfor">thanks for</a>
     </nav>
-    
-    <nav id="topMenu2" >
-        <ul>
-                <li><a class="menuLink" onclick="location.href='mypage.html'">About Me</a></li>
-                <li><a class="menuLink" onclick="location.href='tour.html'">Tour</a></li>
-                <li><a class="menuLink" onclick="location.href='roadmap.html'">Roadmap</a></li>
-                <li><a class="menuLink" onclick="location.href='members.html'">members</a></li>
-        </ul>
-    </nav>
-    <hr>
-      <article>
-        <!--자동 슬라이스-->
-        <div class="slide slide_wrap">
-            <div class="slide_item item1"></div>
-            <div class="slide_item item2"></div>
-            <div class="slide_item item3"></div>
-            <div class="slide_prev_button slide_button">◀</div>
-            <div class="slide_next_button slide_button">▶</div>
-            <ul class="slide_pagination"></ul>
-        </div>
-        <div class="typing-demo">Welcome to Jin's homepage.</div>
+    <article>
+
+      <!-- <h1 data-heading="Slide">Slide</h1> -->
+
+
+      <h1>Welcome</h1>
+
+  
+
     </article>
-      <footer>
-        <!-- <nav>
+    <footer>
+      <!-- <nav>
             <a href='https://cocoder.tistory.com' target='_blank'>Blog</a> |
             <a href='https://github.com/cocoder16' target='_blank'>Github</a>
         </nav> -->
-        <p>
-            <span>email : update_set@naver.com</span><br/>
-            <span>Copyright 2023. jindamgom. All Rights Reserved.</span>
-        </p>
+      <p>
+        <span>email : update_set@naver.com</span><br />
+        <span>Copyright 2023. jindamgom. All Rights Reserved.</span>
+      </p>
     </footer>
-    </div>
-      <script src="./js/slide.js"></script>
+  </div>
+  <script src="./js/index.js"></script>
 </body>
 </html>
 <!--
 <a href="https://www.flaticon.com/kr/free-icons/" title="회원 아이콘">회원 아이콘  제작자: GOFOX - Flaticon</a>
 <a href="https://www.flaticon.com/kr/free-icons/" title="집 아이콘">집 아이콘  제작자: Freepik - Flaticon</a>
 
+-->
+<!--
+
+    CDN이란 html 파일에서 참조하는 css, javascript 파일이나 다른 리소스 파일을 
+    웹사이트 서버가 아닌 다른 공유 공간에 두고 여러 웹사이트가 참조할 수 있게 하는 서비스를 의미한다.
+    해당 외부스타일시트 링크를 <head></head>사이에 추가하면 부트스트랩을 사용할 수 있다.
+    https://github.com/nostalgic-css/NES.css
+    https://nostalgic-css.github.io/NES.css/
 -->
