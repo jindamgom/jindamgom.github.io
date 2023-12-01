@@ -1,9 +1,9 @@
-
 @font-face {
   font-family: 'DungGeunMo';
   src: url('../font/DungGeunMo.woff2');
 }
 body {
+  width:100vw;
   background-color: #E59400;
   text-align: center;
   padding: 30px;
@@ -11,12 +11,12 @@ body {
 }
 article
 {
-  /* background-color: #ccc; */
-  background-color: transparent;
+  background-color: #ccc;
+  /* background-color: transparent; */
 }
 #img_me
 {
-  width: 500px;
+  width: 400px;
   background-color: blue;
 }
 
@@ -225,6 +225,17 @@ hr {
 
 footer{
   width: 100%;
-  background-color: white;
+  /* background-color: white; */
 }
 
+/*아이콘*/
+
+.icon_tstory
+{
+  background-color: green;
+  width:"50px";
+}
+.nes-icon github is-large
+{
+  width:"300px";
+}

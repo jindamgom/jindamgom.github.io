@@ -1,6 +1,7 @@
 <!--
     회원 가입 페이지
     회원가입 폼 태그 구현 후 html5api web-storage학습 후 구현
+    1201 구현 및 테스트
 -->
 <!--Landing page-->
 <!DOCTYPE html>
@@ -9,10 +10,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage join</title>
+    
+    <!-- 
+        CDN방식으로 import, core style only 
+        두개의 stylesheet순서가 바뀌면 내가 적용할 membership.css가 먹통이 된다.
+        순서를 바꿔줘야 두 css가 잘 적용됨.
+    -->
+    <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
     <!-- 적용할 style sheet-->
-    <link rel="stylesheet" href="./css/membership.css">
+    <link rel="stylesheet" href="css/membership.css"/>
 </head>
 <body>
-    <h1>회원가입 페이지</h1>
+    <div class="wrapper">
+      <h2>회원가입</h2>
+      <div class="nes-field is-inline">
+        <label for="inline_field">Nick name</label>
+        <input type="text" id="inline_field" class="nes-input is-success" placeholder="닉네임을 입력해주세요.">
+      </div>
+      
+      <div class="nes-field is-inline">
+        <label for="warning_field">Password</label>
+        <input type="password" id="warning_field" class="nes-input is-warning" placeholder="8자 이상, 영어/숫자 1개 이상 포함">
+       
+    </div>
+     
+      <div class="nes-field is-inline">
+        <label for="error_field">Confirm<br>Password</label>
+        <input type="password" id="error_field" class="nes-input is-error" placeholder="비밀번호를 한 번 더 입력해주세요">
+      </div>
+
+    </div>
+      <script src="./js/membership.js"></script>
 </body>
 </html>
