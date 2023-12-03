@@ -1,17 +1,33 @@
-
 @font-face {
   font-family: 'DungGeunMo';
   src: url('../font/DungGeunMo.woff2');
 }
+/*바디*/
 body {
-  background-color: #4AA52E;
+  background-color: ivory;
   text-align: center;
-  padding: 30px;
+  /* padding: 0px; */
   font-family: 'DungGeunMo';
 }
-#img_me
+
+#index_content
 {
-  width: 500px;
+
+  margin-top: 50px;
+  /* background-color: transparent; */
+}
+
+#index_img1
+{
+  width:60%;
+}
+
+/*상단 메뉴 영역*/
+
+#topMenu {  
+  margin-top: 50px;
+  background-color: transparent;         
+  width: 100%; 
 }
 .eightbit-btn {
   width: 200px;
@@ -91,71 +107,50 @@ body {
   box-shadow: inset 4px 4px 0px 0px rgb(113, 164, 184);
 }
 
-.eightbit-btn--thanksfor {
+.eightbit-btn--thanksto {
   width: 200px;
   background: violet;
   box-shadow: inset -4px -4px 0px 0px rgb(162, 78, 162);
 }
-.eightbit-btn--thanksfor:hover, .eightbit-btn--thanksfor:focus {
+.eightbit-btn--thanksto:hover, .eightbit-btn--thanksfor:focus {
   background:  violet;
   box-shadow: inset -6px -6px 0px 0px rgb(162, 78, 162);
 }
-.eightbit-btn--thanksfor:active {
+.eightbit-btn--thanksto:active {
   box-shadow: inset 4px 4px 0px 0px rgb(162, 78, 162);
 }
 
-li{   
-float: left;       
-vertical-align: middle;    
-text-align: center;    
-background-color: #2d2d2d; 
-border-right: 1px solid silver;
-border-radius: 4px;
+.eightbit-btn--home {
+  width: 100px;
+  background: white;
+  box-shadow: inset -4px -4px 0px 0px silver;
+}
+.eightbit-btn--home:hover, .eightbit-btn--home:focus {
+  background:  white;
+  box-shadow: inset -6px -6px 0px 0px silver;
+}
+.eightbit-btn--home:active {
+  box-shadow: inset 4px 4px 0px 0px silver;
 }
 
-
-/*상단 메뉴 영역2*/
-#topMenu {  
-background-color: green;          
-height: 4rem;
-width: 100%; 
-/* float: right; */
+.eightbit-btn--join {
+  width: 100px;
+  background: white;
+  box-shadow: inset -4px -4px 0px 0px silver;
 }
-/*오른쪽 정렬.*/
-/* #topMenu2 ul{                   
-list-style: none;  
-line-height: 4rem;          
-color: blue;
-float: right;                
-} */
-/*그리고 자식요소들은 좌측부터 정렬한다.*/
-/* #topMenu2 ul li:first-child 
-{  
-float: left;       
-vertical-align: middle;    
-text-align: center;    
-background-color: #2d2d2d; 
-border-right: 1px solid silver;
-border-radius: 4px;
-} */
+.eightbit-btn--join:hover, .eightbit-btn--join:focus {
+  background:  white;
+  box-shadow: inset -6px -6px 0px 0px silver;
+}
+.eightbit-btn--join:active {
+  box-shadow: inset 4px 4px 0px 0px silver;
+}
 
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
-/* body {
-  background-color: pink;
-  max-width: 100vw;
-  margin: 0 auto;
-  padding: 30px;
-  font-family: 'DungGeunMo';
-  text-align: center;
-} */
 
-
-h2 {
-  font-size: 2rem;
-}
 
 
 /* https://developing-move.tistory.com/123 */
@@ -167,23 +162,30 @@ h2 {
   line-height: 3.4rem;
 } */
 
-h1 {
+
+
+
+/*물결치는 텍스트 효과*/
+span {
+  position: absolute;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
+  /* align-items: center; */
+  justify-content: center;/*가로중앙정렬*/
+  /* align-content: center; */
   text-align: center;
   font-weight: normal;
   width: 100%;
-  text-align: center;
   font-size: 10vw;
-  background: linear-gradient(-45deg, #4bc0c8 25%, #feac5e 25%, #feac5e 50%, #4bc0c8 50%, #4bc0c8 75%, #feac5e 75%, #feac5e);
+  background: 
+  linear-gradient(-45deg, #b49d88 25%, #feac5e 25%, #feac5e 50%, #b49d88 50%, #b49d88 75%, #feac5e 75%, #feac5e);
   -webkit-background-clip: text;
+  -webkit-text-stroke: 3px white;
   -webkit-text-fill-color: transparent;
   background-size: 20px 20px;
   background-position: 0 0;
   animation: stripes 2s linear infinite;
-  
+
+
 }
 @keyframes stripes
  {
@@ -195,7 +197,6 @@ h1 {
 h1, h2 {
   font-family: 'DungGeunMo', cursive;
 }
-
 p {
   font-size: 1.25rem;
   line-height: 1.75rem;

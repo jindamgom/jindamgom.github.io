@@ -3,16 +3,41 @@
     font-family: 'DungGeunMo';
     src: url('../font/DungGeunMo.woff2');
   }
-  body {
-    background-color: ivory;
-    text-align: center;
-    padding: 30px;
-    font-family: 'DungGeunMo';
-  }
-  #img_me
-  {
-    width: 500px;
-  }
+ /*바디*/
+body {
+  background-color: ivory;
+  text-align: center;
+  padding-top: 50px;
+  /* padding: 0px; */
+  font-family: 'DungGeunMo'; 
+}
+
+/*스크롤 기능은 유지하되,  스크롤바는 안보이게 하도록.*/
+body::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+article
+{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+#div_member
+{
+  margin-top: 50px;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+
+
+
+/*상단 메뉴 영역*/
+#topMenu {  
+  background-color: green;         
+  width: 100%; 
+}
   .eightbit-btn {
     width: 200px;
     background: #92CD41;
@@ -91,18 +116,31 @@
     box-shadow: inset 4px 4px 0px 0px rgb(113, 164, 184);
   }
   
-  .eightbit-btn--thanksfor {
-    width: 200px;
-    background: violet;
-    box-shadow: inset -4px -4px 0px 0px rgb(162, 78, 162);
-  }
-  .eightbit-btn--thanksfor:hover, .eightbit-btn--thanksfor:focus {
-    background:  violet;
-    box-shadow: inset -6px -6px 0px 0px rgb(162, 78, 162);
-  }
-  .eightbit-btn--thanksfor:active {
-    box-shadow: inset 4px 4px 0px 0px rgb(162, 78, 162);
-  }
+ .eightbit-btn--home {
+  width: 100px;
+  background: white;
+  box-shadow: inset -4px -4px 0px 0px silver;
+}
+.eightbit-btn--home:hover, .eightbit-btn--home:focus {
+  background:  white;
+  box-shadow: inset -6px -6px 0px 0px silver;
+}
+.eightbit-btn--home:active {
+  box-shadow: inset 4px 4px 0px 0px silver;
+}
+
+.eightbit-btn--join {
+  width: 100px;
+  background: white;
+  box-shadow: inset -4px -4px 0px 0px silver;
+}
+.eightbit-btn--join:hover, .eightbit-btn--join:focus {
+  background:  white;
+  box-shadow: inset -6px -6px 0px 0px silver;
+}
+.eightbit-btn--join:active {
+  box-shadow: inset 4px 4px 0px 0px silver;
+}
   
   li{   
   float: left;       
@@ -112,32 +150,7 @@
   border-right: 1px solid silver;
   border-radius: 4px;
   }
-  
-  
-  /*상단 메뉴 영역2*/
-  #topMenu {  
-  background-color: green;          
-  height: 4rem;
-  width: 100%; 
-  /* float: right; */
-  }
-  /*오른쪽 정렬.*/
-  /* #topMenu2 ul{                   
-  list-style: none;  
-  line-height: 4rem;          
-  color: blue;
-  float: right;                
-  } */
-  /*그리고 자식요소들은 좌측부터 정렬한다.*/
-  /* #topMenu2 ul li:first-child 
-  {  
-  float: left;       
-  vertical-align: middle;    
-  text-align: center;    
-  background-color: #2d2d2d; 
-  border-right: 1px solid silver;
-  border-radius: 4px;
-  } */
+
   
   *, *:before, *:after {
     box-sizing: border-box;
@@ -225,8 +238,13 @@
     width: 70%;
     height: 600px;
   }
+label{
+  background-color: green;
+  display: inline-block;
+  width:300px;
+}
 
-  @font-face {
+  /* @font-face {
     font-family: 'Nintendoid1';
     font-style: normal;
     font-weight: 400;
@@ -254,4 +272,20 @@
     to {
       text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
     }
-  }
+  } */
+
+/*회원 테이블 예제*/
+#table_member{
+  background-color: ivory;
+  width: 500px;
+}
+#table_member thead{
+  background-color: gold;
+}
+#table_member tbody{
+  background-color: white;
+}
+img{
+  width:100%;
+}
+

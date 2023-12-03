@@ -6,15 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>homepage index</title>
+
+  <!-- latest -->
+  <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
   <!-- 적용할 style sheet-->
   <link lang="scss" rel="stylesheet" href="./css/mypage.css">
-
-    <!-- minify -->
-<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
-<!-- latest -->
-<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-<!-- core style only -->
-<link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -23,29 +19,42 @@
   <div id="index_div_wrap">
 
     <nav id="topMenu">
+      <a onclick="location.href='index.html'" class="eightbit-btn eightbit-btn--home">H</a>
       <a onclick="location.href='mypage.html'" class="eightbit-btn">My page</a>
       <a onclick="location.href='tour.html'" class="eightbit-btn eightbit-btn--proceed">Tour</a>
       <a onclick="location.href='roadmap.html'" class="eightbit-btn eightbit-btn--reset">Road map</a>
       <a onclick="location.href='members.html'" class="eightbit-btn eightbit-btn--members">Members</a>
-      <a onclick="location.href='thanksfor.html'" class="eightbit-btn eightbit-btn--thanksfor">thanks for</a>
+      <!-- <a onclick="location.href='thanksto.html'" class="eightbit-btn eightbit-btn--thanksto">thanks to</a> -->
+      <a onclick="location.href='membership.html'" class="eightbit-btn eightbit-btn--join">+</a>
     </nav>
     <article>
- <!-- github -->
+      <div id="user-wrap">
+        <div id="user-image">
+          <img id="info_me" src="/images/info.png">
+        </div>
+        <div id="user-text1">
+          <h1>고혜진</h1>
+        </div>
+        <div id="user-text2">
+          <h2>백엔드 개발자를 꿈꾸며..</h2>
+        </div>
+        <div id="user-text3">
+          <h2>아직 모르는 것이 많지만 </h2>
+        </div>
+        <div id="user-text4">
+          <h2>꾸준히 노력중입니다. 화이팅!</h2>
+        </div>
+      </div>
+        
+      <div id="div_info_me2">
+        <p class="nes-balloon from-left nes-pointer">
+        즐겁다.
+        </p>
       <img id="img_me" src="/images/me.gif">
+      </div>
 
-      <i class="nes-icon github is-large"></i>
-      <img class="icon_tstory" src="/images/icon_tstory.png" ></img>
     </article>  
-    <footer>
-      <!-- <nav>
-            <a href='https://cocoder.tistory.com' target='_blank'>Blog</a> |
-            <a href='https://github.com/cocoder16' target='_blank'>Github</a>
-        </nav> -->
-      <p>
-        <span>email : update_set@naver.com</span><br />
-        <span>Copyright 2023. jindamgom. All Rights Reserved.</span>
-      </p>
-    </footer>
+  
   </div>
   <script src="./js/mypage.js"></script>
 </body>

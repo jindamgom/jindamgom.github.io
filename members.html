@@ -8,9 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage index</title>
-    <!-- 적용할 style sheet-->
-    <link rel="stylesheet" href="./css/members.css">
+    <title>homepage members</title>
     <!--CDN방식으로 import-->
   <!-- minify -->
 <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
@@ -18,40 +16,58 @@
 <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
 <!-- core style only -->
 <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+ <!-- 적용할 style sheet-->
+ <link rel="stylesheet" href="./css/members.css">
+
+ <script defer src="./js/members.js"></script>
+    <script>
+        window.onload = () =>{
+            //dom tree가 모두 load된 이 후 실행. 
+            //꼭 window.onload 이벤트에 함수를 작성해야 오류가 발생하지 않는다.
+            renderGuestBooks();
+        }    
+    </script>
 </head>
 <body>
     <div id="index_div_wrap">
-        
-    
         <nav id="topMenu">
-            <a onclick="location.href='mypage.html'" class="eightbit-btn">My page</a>
-            <a onclick="location.href='tour.html'" class="eightbit-btn eightbit-btn--proceed">Tour</a>
-            <a onclick="location.href='roadmap.html'" class="eightbit-btn eightbit-btn--reset">Road map</a>
-            <a onclick="location.href='members.html'" class="eightbit-btn eightbit-btn--members">Members</a>
-            <a onclick="location.href='thanksfor.html'" class="eightbit-btn eightbit-btn--thanksfor">thanks for</a>
+          <a onclick="location.href='index.html'" class="eightbit-btn eightbit-btn--home">H</a>
+          <a onclick="location.href='mypage.html'" class="eightbit-btn">My page</a>
+          <a onclick="location.href='tour.html'" class="eightbit-btn eightbit-btn--proceed">Tour</a>
+          <a onclick="location.href='roadmap.html'" class="eightbit-btn eightbit-btn--reset">Road map</a>
+          <a onclick="location.href='members.html'" class="eightbit-btn eightbit-btn--members">Members</a>
+          <!-- <a onclick="location.href='thanksto.html'" class="eightbit-btn eightbit-btn--thanksto">thanks to</a> -->
+          <a onclick="location.href='membership.html'" class="eightbit-btn eightbit-btn--join">+</a>
           </nav>
-    <hr>
       <article>
-        <h1>가입</h1>
-        <p class="nes-balloon from-left nes-pointer">
-            가나다라마바사아자차카타파하
-          </p>
-
-          <h2>Annoying CRT retro flicker</h2>
-<p>Come for the nostalgia, stay for the vertigo-inducing jiggle effect. Can be used in a more artistic / less queasy way without the animation. Works best on large blocky text.</p>
+        <div id ="div_member" class="nes-table-responsive">
+          <h2>my members</h2>
+          <table id="table_member" class="nes-table is-bordered is-centered">
+            <thead>
+              <tr>
+                <th>icon</th>
+                <th>nickname</th>
+                <th>createdAt</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Thou hast had a good morning</td>
+                <td>Thou hast had a good afternoon</td>
+                <td>Thou hast had a good evening</td>
+              </tr>
+              <tr>
+                <td>Thou hast had a good morning</td>
+                <td>Thou hast had a good afternoon</td>
+                <td>Thou hast had a good evening</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
     </article>
-      <footer>
-        <!-- <nav>
-            <a href='https://cocoder.tistory.com' target='_blank'>Blog</a> |
-            <a href='https://github.com/cocoder16' target='_blank'>Github</a>
-        </nav> -->
-        <p>
-            <span>email : update_set@naver.com</span><br/>
-            <span>Copyright 2023. jindamgom. All Rights Reserved.</span>
-        </p>
-    </footer>
+     
     </div>
-      <script src="./js/members.js"></script>
+      <!-- <script src="./js/members.js"></script> -->
 </body>
 </html>
 <!--

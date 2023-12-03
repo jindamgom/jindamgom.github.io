@@ -3,24 +3,25 @@
     font-family: 'DungGeunMo';
     src: url('../font/DungGeunMo.woff2');
   }
-  body {
-    text-align: center;
-    padding: 30px;
-    font-family: 'DungGeunMo';
-  }
-  #img_me
-  {
-    width: 500px;
-  }
+ /*바디*/
+body {
+  background-color: ivory;
+  text-align: center;
+  padding-top: 50px;
+  /* padding: 0px; */
+  font-family: 'DungGeunMo';
+}
+article
+{
+  background-color: #ccc;
+  /* background-color: transparent; */
+}
+/*상단 메뉴 영역*/
 
-  /*상단 메뉴 영역2*/
-  #topMenu2 {  
-    background-color: blue;
-    height: fit-content;          
-    width: 100vw; 
-    /* float: right; */
-    }
-
+#topMenu {  
+  background-color: green;         
+  width: 100%; 
+}
 
   .eightbit-btn {
     width: 200px;
@@ -100,16 +101,16 @@
     box-shadow: inset 4px 4px 0px 0px rgb(113, 164, 184);
   }
   
-  .eightbit-btn--thanksfor {
+  .eightbit-btn--thanksto {
     width: 200px;
     background: violet;
     box-shadow: inset -4px -4px 0px 0px rgb(162, 78, 162);
   }
-  .eightbit-btn--thanksfor:hover, .eightbit-btn--thanksfor:focus {
+  .eightbit-btn--thanksto:hover, .eightbit-btn--thanksfor:focus {
     background:  violet;
     box-shadow: inset -6px -6px 0px 0px rgb(162, 78, 162);
   }
-  .eightbit-btn--thanksfor:active {
+  .eightbit-btn--thanksto:active {
     box-shadow: inset 4px 4px 0px 0px rgb(162, 78, 162);
   }
   

@@ -1,42 +1,70 @@
 <!--my page-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage index</title>
-    <!-- 적용할 style sheet-->
-    <link rel="stylesheet" href="./css/tour.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tour</title>
+  <!-- 적용할 style sheet-->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <link lang="scss" rel="stylesheet" href="./css/tour.css">
 </head>
+
 <body>
-    <div id="index_div_wrap">
-    <nav id="topMenu2" >
-        <ul>
-                <li><a class="menuLink" onclick="location.href='mypage.html'">About Me</a></li>
-                <li><a class="menuLink" onclick="location.href='tour.html'">Tour</a></li>
-                <li><a class="menuLink" onclick="location.href='roadmap.html'">Roadmap</a></li>
-                <li><a class="menuLink" onclick="location.href='members.html'">members</a></li>
-        </ul>
+  <div id="index_div_wrap">
+
+    <nav id="topMenu">
+      <a onclick="location.href='index.html'" class="eightbit-btn eightbit-btn--home">H</a>
+      <a onclick="location.href='mypage.html'" class="eightbit-btn">My page</a>
+      <a onclick="location.href='tour.html'" class="eightbit-btn eightbit-btn--proceed">Tour</a>
+      <a onclick="location.href='roadmap.html'" class="eightbit-btn eightbit-btn--reset">Road map</a>
+      <a onclick="location.href='members.html'" class="eightbit-btn eightbit-btn--members">Members</a>
+      <!-- <a onclick="location.href='thanksto.html'" class="eightbit-btn eightbit-btn--thanksto">thanks to</a> -->
+      <a onclick="location.href='membership.html'" class="eightbit-btn eightbit-btn--join">+</a>
     </nav>
-      <article>
-    </article>
+    <article>
+      <div id="user-wrap">
+        <div id="user-image">
+          <img id="info_me" src="/images/info.png">
+          <h1>음악 감상</h1>
+          <p>영화 - 보헤미안 랩소디 이 후로 좋아하게 됨</p>
+          <p>코로나 터지기 직전 콘서트 다녀옴</p>
+          <p>이제 내한 할 일이 없을 것 같아 슬픔</p>
+        </div>
+        <div id="user-image-content1">
+          <img id="img_me" src="/images/music.png">
+          <div id="user-text-content1">
+        </div>
+        </div>
+        
+      </div>
+        
+      <div id="user-wrap">
+        <div id="user-image">
+          <img id="info_me" src="/images/info.png">
+          <h1>포켓몬 고 </h1>
+          <p>나도 모르는 사이에 외국인 친구들 늘어남</p>
+          <p>친구랑 이브이 잡겠다고 남산 등반한 뒤 몸살걸림</p>
+          <p>알 부화 시킨다고 3시간 걸어다님 헬스 어플 인듯.</p>
+        </div>
+        <div id="user-image-content2">
+          <img id="img_me" src="/images/game.png">
+        </div>
+      </div>
     
-      <footer>
-        <!-- <nav>
-            <a href='https://cocoder.tistory.com' target='_blank'>Blog</a> |
-            <a href='https://github.com/cocoder16' target='_blank'>Github</a>
-        </nav> -->
-        <p>
-            <span>email : update_set@naver.com</span><br/>
-            <span>Copyright 2023. jindamgom. All Rights Reserved.</span>
-        </p>
-    </footer>
-    </div>
-      <script src="./js/tour.js"></script>
+    </article>  
+  
+    
+  
+    
+  </div>
+  <script src="./js/tour.js"></script>
 </body>
+
 </html>
 <!--
 <a href="https://www.flaticon.com/kr/free-icons/" title="회원 아이콘">회원 아이콘  제작자: GOFOX - Flaticon</a>
 <a href="https://www.flaticon.com/kr/free-icons/" title="집 아이콘">집 아이콘  제작자: Freepik - Flaticon</a>
-
+https://codepen.io/Myscript2010/pen/MyGKKq
 -->
