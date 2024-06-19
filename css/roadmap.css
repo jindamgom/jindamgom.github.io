@@ -184,18 +184,22 @@ hr {
 .pen-intro {
   text-align: center;
 }
-#div_member
-{
+#div_member {
   background-color: transparent;
   display: flex;
+  align-items: flex-start; 
   justify-content: center;
-  
-
+  flex-wrap: wrap; /* 여러 줄로 배치될 경우를 대비 */
+  padding: 20px; /* 여백 추가 */
 }
 #table_member{
   margin-left: 10px;
+  width: 200px;
 }
+
 #table_member th{
   background-color: orange;
 }
-
+#table_member tr{
+  height: 70px;
+}

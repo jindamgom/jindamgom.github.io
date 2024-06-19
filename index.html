@@ -22,28 +22,28 @@
   <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />  
  <link rel="stylesheet" href="./css/index.css">
 
-
+ <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
   <div id="index_div_wrap">
     <nav id="topMenu">
-      <a onclick="location.href='index.html'" class="eightbit-btn eightbit-btn--home">H</a>
-      <a onclick="location.href='mypage.html'" class="eightbit-btn">My page</a>
-      <a onclick="location.href='tour.html'" class="eightbit-btn eightbit-btn--proceed">Tour</a>
-      <a onclick="location.href='roadmap.html'" class="eightbit-btn eightbit-btn--reset">Road map</a>
-      <a onclick="location.href='members.html'" class="eightbit-btn eightbit-btn--members">Members</a>
+      <a onclick="loadContent('index2.html')" class="eightbit-btn eightbit-btn--home">H</a>
+      <a id="btn_myPage" onclick="loadContent('mypage.html')" class="eightbit-btn">My page</a>
+      <a onclick="loadContent('tour.html')" class="eightbit-btn eightbit-btn--proceed">Tour</a>
+      <a onclick="loadContent('roadmap.html')" class="eightbit-btn eightbit-btn--reset">Road map</a>
+      <a onclick="loadContent('members.html')" class="eightbit-btn eightbit-btn--members">Members</a>
       <!-- <a onclick="location.href='thanksto.html'" class="eightbit-btn eightbit-btn--thanksto">thanks to</a> -->
-      <a onclick="location.href='membership.html'" class="eightbit-btn eightbit-btn--join">+</a>
+      <a onclick="loadContent('membership.html')" class="eightbit-btn eightbit-btn--join">+</a>
     </nav>
 
-    <article id="index_content">
+    <!-- <article id="index_content">
       <span>Hello World</span>
       <img id="index_img1" src="../images/index_img1.jpg">
-
-
-    </article>
-
+    </article> -->
+    <div id="div_content">
+      <p>이곳에 컨텐츠 출력</p>
+    </div>
     
   </div>
   </div>
