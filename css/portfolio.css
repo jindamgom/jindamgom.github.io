@@ -84,7 +84,7 @@ body, html {
 .container {
     display: flex;
     flex-direction: column;
-    height: 300%; /* 3 sections, each 100% height of viewport */
+    height: 500%; /* 3 sections, each 100% height of viewport */
     transition: transform 0.5s ease;
     width: 100%; /* 컨테이너 너비 80% */
     margin: 0 auto; /* 가운데 정렬을 위한 자동 마진 */

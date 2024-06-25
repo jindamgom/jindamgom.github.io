@@ -1,0 +1,226 @@
+.project4-content-top-button button {
+    padding: 10px 15px;
+    border: 1px solid #945bff;
+    background-color: #945bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width:80px;
+    transition: background-color 0.5s, border-color 0.5s; /* 애니메이션 추가 */
+}
+
+button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* 아래부터는 컨텐츠 영역 관련 css 속성 */
+
+/* 꽉채우지 않고 사방 20px씩 패딩값을 주어 컨텐츠를여유있게 보이도록 함.*/
+.project4-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    height: 95vh; /* 섹션의 높이를 전체 뷰포트 높이의 95%로 설정 */
+    background-color: transparent; /* 섹션 배경색 설정 */
+}
+
+/* 타이틀 관련 */
+.project4-title {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+    background: linear-gradient(to right, #5baaff, #d0eaff); /* 그라데이션 배경색 설정 */
+    padding-left: 20px;
+}
+.project4-title p{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.project4-content
+{
+    padding: 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+/* 이미지 */
+#project4-image
+{
+    margin-left: 0px;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    border: #0056b3 1px solid;
+}
+.project4-content-top
+{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    height: fit-content;
+    width: 100%;
+    position: relative;
+}
+.project4-content-top-text
+{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    height: fit-content;
+    width: 100%;
+}
+.project4-content-top-button
+{  
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    height: fit-content;
+    width: fit-content;
+    position: absolute; /* Position the button absolutely */
+    bottom: 0; /* Align it to the bottom of the parent element */
+    margin-bottom: 10px;
+}
+.project4-content-top-button button{
+    margin-right: 20px;
+}
+
+.project4-content-top-text1
+{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.project4-content-top-text1 p 
+{
+    font-size:15px;
+    font-weight: bold;
+    margin: 5px 0; /* 상하 간격을 줄이기 위해 margin 속성 추가 */
+}
+.project4-content-top-text2
+{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.project4-content-top-text2 p
+{
+    font-size:15px;
+    margin: 5px 0; /* 상하 간격을 줄이기 위해 margin 속성 추가 */
+}
+.project4-content-top-text3
+{
+    background-color: red;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.project4-content-top-text3 p
+{
+    font-size:15px;
+    margin: 2px 0; /* 상하 간격을 줄이기 위해 margin 속성 추가 */
+}
+
+.project4-section hr{
+    border: none; /* 기본 테두리 제거 */
+    height: 1px; /* 선의 높이 설정 */
+    background-color: navy; /* 선의 색상 설정 */
+    width: 95%; /* 선의 너비를 100%로 설정 */
+    margin: 0 auto; /* 기본 마진 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+}
+.div_hr {
+    width: 1px; /* Narrow width to make it a vertical line */
+    height: 100%; /* Full height to span vertically */
+    background-color: black; /* Color of the line */
+    border: none; /* Remove default border */
+}
+
+/* =================================================================== */
+.project4-content-bottom
+{
+    background-color: transparent;
+    flex-grow: 1; 
+    /* 
+    flex-grow: 1;을 가진 아이템이 하나라면, 그 아이템이 남은 공간을 모두 차지합니다. 
+    따라서 flex-grow: 1;은 "이 아이템을 가능한 공간을 모두 차지하도록 성장시켜라"는 의미로 이해하시면 됩니다.
+    */
+}
+.project4-mypart-title {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 40px;
+    justify-content: center;
+    background-color:#5baaff; /* 섹션 배경색 설정 */
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+.project-myworks-list {
+    margin-top: 10px;
+    margin-left: 30px;
+    display: grid;
+    gap: 10px;
+    width: calc(100% - 60px); /* Adjusting for margins */
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+}
+.project-myworks-item
+{
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 5px; /*상하좌우 5px*/
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center;
+        text-align: center; */
+        height: 400px; /* Example height */
+}
+.project-myworks-mypart p
+{
+    font-size: 14px;
+}
+.project-myworks-item-title
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: #0056b3;
+    
+}
+.project-myworks-item-sub
+{
+    background-color: transparent;
+}
+
+.project-myworks-item-sub p{
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+}
+.project-myworks-item-sub ul{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.project-myworks-item-sub li{
+  
+    font-size: 14px;
+    text-align: left;
+    font-weight: normal;
+}
